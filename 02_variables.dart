@@ -5,11 +5,20 @@ void main() {
   final abilities = <String>['impostor'];
   final List<String> sprites = ['ditto/front.png', 'ditto/back.png'];
 
+// dynamic == null
+  dynamic errorMessage = 'Hola';
+  errorMessage = true;
+  errorMessage = [1, 2, 3, 4, 5, 6];
+  errorMessage = {1, 2, 3, 4, 5, 6};
+  errorMessage = () => true;
+  errorMessage = null;
+
   print("""
   $pokemon
   $hp
   $isAlive
   $abilities
   $sprites
+  $errorMessage
 """);
 }
