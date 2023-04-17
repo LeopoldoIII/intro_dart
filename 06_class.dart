@@ -16,14 +16,8 @@ class Hero {
   //   power = pPower;
   // }
 
-
-
-@override
+  @override
   String toString() {
-    // TODO: implement toString
     return '$name - $power';
   }
-
-
-
 }
